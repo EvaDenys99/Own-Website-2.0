@@ -11,7 +11,7 @@
   <section>
     <div>
       <h3>Development</h3>
-      <p>HTML - CSS - JavaScript - React - Arduino</p>
+      <p>HTML - CSS - JavaScript - React - Arduino - Dwengo - PLC</p>
     </div>
     <div>
       <h3>Design</h3>
