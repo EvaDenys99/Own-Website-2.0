@@ -3,12 +3,14 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Monserat';
   box-sizing: border-box;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
+  font-size: 1.3rem;
 }
 
 /* stylelint-disable */
@@ -19,6 +21,43 @@ body {
   box-sizing: inherit;
 }
 /* stylelint-enable */
+
+@font-face {
+  font-family: 'Gobold';
+  src:
+    url('assets/fonts/gobold/GoboldHollowBold.woff2') format('woff2'),
+    url('assets/fonts/gobold/GoboldHollowBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fritz';
+  src:
+    url('assets/fonts/fritz/FRITZreg500.woff2') format('woff2'),
+    url('assets/fonts/fritz/FRITZreg500.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monserat';
+  src:
+    url('assets/fonts/monserat/regular/Montserrat-Regular.woff2')
+    format('woff2'),
+    url('assets/fonts/monserat/regular/Montserrat-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monserat Bold';
+  src:
+    url('assets/fonts/monserat/bold/Montserrat-Bold.woff2') format('woff2'),
+    url('assets/fonts/monserat/bold/Montserrat-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 a {
   color: var(--white);
@@ -38,7 +77,40 @@ footer {
 header {
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  margin-bottom: 6.8rem;
+  margin-top: 4.3rem;
+}
+
+h1,
+.site-header__titelAfkort {
+  font-size: 2.6rem;
+  font-family: 'Gobold';
+}
+
+h2 {
+  font-family: 'Gobold';
+  font-size: 5rem;
+
+  background: linear-gradient(var(--white) 57%, var(--rose) 43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+h3 {
+  font-family: 'Monserat Bold';
+  text-transform: uppercase;
+  color: var(--rose);
+}
+
+span {
+  font-family: 'Gobold';
+  font-size: 1.6rem;
+}
+
+.link {
+  color: var(--rose);
+  text-decoration: underline;
 }
 
 .site-header_menubalk {
@@ -47,7 +119,7 @@ header {
 
   justify-content: space-between;
   align-items: center;
-  width: 96rem;
+  width: 80%;
 }
 
 .site-header__menu {
@@ -57,6 +129,13 @@ header {
 
 .site-header__items {
   margin-left: 6.5rem;
+  font-size: 1.6rem;
+  font-family: 'Fritz';
+}
+
+.site-header__items:hover {
+  font-size: 1.8rem;
+  margin-left: 6.3rem;
 }
 
 .site-header__titelAfkort {
@@ -64,14 +143,8 @@ header {
 }
 
 .title_page1 {
-  font-size: 6rem;
-
-  background: linear-gradient(var(--white) 57%, var(--rose) 43%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1;
   position: absolute;
-  margin-top: 6rem;
+  margin-top: 6.6rem;
 }
 
 .title_page1_img {
@@ -87,4 +160,40 @@ header {
 
 .copyrightEva {
   display: none;
+}
+
+/* about */
+
+.about {
+  line-height: 2.5rem;
+}
+
+.info {
+  width: 71.3rem;
+}
+
+.info_3words {
+  margin-bottom: 4.9rem;
+}
+
+.info_mini {
+  margin-bottom: 3.7rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 71.3rem;
+
+  margin-top: 7.4rem;
+}
+
+.skillset {
+  width: 12rem;
+  margin-top: 1.7rem;
+}
+
+.socialMedia {
+  margin-top: 10rem;
 }
