@@ -83,13 +83,13 @@ header {
 
 h1,
 .site-header__titelAfkort {
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-family: 'Gobold';
 }
 
 h2 {
   font-family: 'Gobold';
-  font-size: 5rem;
+  font-size: 3.6rem;
 
   background: linear-gradient(var(--white) 57%, var(--rose) 43%);
   -webkit-background-clip: text;
@@ -127,15 +127,16 @@ span {
   flex-direction: row;
 }
 
-.site-header__items {
+.site-header__items,
+.site-header__items-actief {
   margin-left: 6.5rem;
   font-size: 1.6rem;
   font-family: 'Fritz';
 }
 
+.site-header__items-actief,
 .site-header__items:hover {
-  font-size: 1.8rem;
-  margin-left: 6.3rem;
+  text-decoration: line-through;
 }
 
 .site-header__titelAfkort {
@@ -144,7 +145,7 @@ span {
 
 .title_page1 {
   position: absolute;
-  margin-top: 6.6rem;
+  margin-top: 7.4rem;
 }
 
 .title_page1_img {
@@ -166,17 +167,19 @@ span {
 
 .about {
   margin-left: 7rem;
+  position: absolute;
+  margin-top: -2rem;
 }
 
 .title_page2 {
   position: absolute;
-  font-size: 3.6rem;
   margin-left: 7rem;
   margin-top: 6.6rem;
 }
 
 .me {
-  background-image: url('assets/img/projecten/me.png');
+  background-image: url('assets/img/me.png');
+  background-repeat: no-repeat;
   width: 46rem;
   height: 61.2rem;
   margin-top: 6.6rem;
@@ -187,7 +190,7 @@ span {
 }
 
 .me:hover {
-  background-image: url('assets/img/projecten/meFull.png');
+  background-image: url('assets/img/meFull.png');
 }
 
 .title_page2_img {
@@ -223,12 +226,13 @@ span {
   justify-content: space-between;
   width: 71.3rem;
 
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .skillset {
-  width: 12rem;
+  width: 17rem;
   margin-top: 1.7rem;
+  line-height: 2rem;
 }
 
 .socialMedia {

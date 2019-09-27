@@ -11,11 +11,14 @@ class ProjectsController extends Controller {
   }
 
   public function index() {
+    $this->set('currentPage', 'home');
   }
 
   public function view() {
+    $this->set('currentPage', 'detail');
   }
 
   public function about() {
+    $this->set('currentPage', 'about');
   }
 }
