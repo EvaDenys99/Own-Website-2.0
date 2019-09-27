@@ -165,11 +165,48 @@ span {
 /* about */
 
 .about {
-  line-height: 2.5rem;
+  margin-left: 7rem;
+}
+
+.title_page2 {
+  position: absolute;
+  font-size: 3.6rem;
+  margin-left: 7rem;
+  margin-top: 6.6rem;
+}
+
+.me {
+  background-image: url('assets/img/projecten/me.png');
+  width: 46rem;
+  height: 61.2rem;
+  margin-top: 6.6rem;
+
+  border: 1px solid;
+  border-image-source: linear-gradient(var(--rose), transparent);
+  border-image-slice: 1;
+}
+
+.me:hover {
+  background-image: url('assets/img/projecten/meFull.png');
+}
+
+.title_page2_img {
+  z-index: -1;
+}
+
+.heardbeat2.0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.boven {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .info {
   width: 71.3rem;
+  line-height: 2.5rem;
 }
 
 .info_3words {
@@ -186,7 +223,7 @@ span {
   justify-content: space-between;
   width: 71.3rem;
 
-  margin-top: 7.4rem;
+  margin-top: 4rem;
 }
 
 .skillset {
@@ -195,5 +232,11 @@ span {
 }
 
 .socialMedia {
-  margin-top: 10rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.socialMedia_item {
+  padding: 1rem;
 }
