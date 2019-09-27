@@ -18,7 +18,7 @@
         <div class="skills">
           <div>
             <h3>Development</h3>
-            <p class="skillset">HTML <span>.</span> CSS <span>.</span> JavaScript <span>.</span> React <span>.</span> Arduino <span>.</span> Dwengo <span>.</span> PLC</p>
+            <p class="skillset">HTML <span>.</span> CSS <span>.</span> JavaScript <span>.</span> React <span>.</span> Arduino <span>.</span> Dwengo <span>.</span> PLC <span>.</span> PHP <span>.</span> SQL</p>
           </div>
           <div>
             <h3>Design</h3>
