@@ -1,6 +1,7 @@
 <div class="main">
   <div class="heardbeat">
-    <h2>Production build</h2>
+    <h2 class="title_page1">Production build</h2>
+    <img class="title_page1_img" src="././assets/img/projecten/heartbeat.png" alt="">
   </div>
 
 

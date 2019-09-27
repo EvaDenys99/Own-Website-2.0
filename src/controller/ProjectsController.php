@@ -15,4 +15,7 @@ class ProjectsController extends Controller {
 
   public function view() {
   }
+
+  public function about() {
+  }
 }

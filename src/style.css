@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* stylelint-disable */
@@ -20,12 +20,71 @@ body {
 }
 /* stylelint-enable */
 
-.heardbeat {
-  background-image: url('./assets/img/projecten/heartbeat.png');
-  background-repeat: no-repeat;
-  color: white;
+a {
+  color: var(--white);
+  text-decoration: none;
 }
 
-.rozeLijn {
-  background-color: pink;
+footer {
+  background-color: var(--rose);
+  width: 100%;
+  height: .3rem;
+
+  /* lijn altijd onderaan */
+  position: fixed;
+  bottom: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.site-header_menubalk {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 96rem;
+}
+
+.site-header__menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.site-header__items {
+  margin-left: 6.5rem;
+}
+
+.site-header__titelAfkort {
+  display: none;
+}
+
+.title_page1 {
+  font-size: 6rem;
+
+  background: linear-gradient(var(--white) 57%, var(--rose) 43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  position: absolute;
+  margin-top: 6rem;
+}
+
+.title_page1_img {
+  z-index: -1;
+}
+
+.heardbeat {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyrightEva {
+  display: none;
 }
