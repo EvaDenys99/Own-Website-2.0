@@ -159,7 +159,8 @@ span {
   align-items: center;
 }
 
-.copyrightEva {
+.copyrightEva,
+.footer-none {
   display: none;
 }
 
@@ -243,4 +244,25 @@ span {
 
 .socialMedia_item {
   padding: 1rem;
+}
+
+/* detail */
+
+.footerDetail {
+  height: 5rem;
+  width: 100%;
+  background-color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* lijn altijd onderaan */
+  position: fixed;
+  bottom: 0;
+}
+
+.footerDetail__text {
+  font-family: 'Fritz';
+  color: var(--black);
 }

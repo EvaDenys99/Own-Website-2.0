@@ -36,7 +36,7 @@
     <main id="main">
       <?php echo $content ?>
     </main>
-    <footer>
+    <footer class="footer<?php if($currentPage == 'detail') echo '-none';?>">
       <p class="copyrightEva">©Eva Denys</p>
     </footer>
     <?php echo $js; ?>
