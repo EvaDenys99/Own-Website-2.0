@@ -13,7 +13,7 @@
   <body>
     <header class="site-header">
       <div class="site-header_menubalk">
-        <h1 class="site-header__titel"><a href="index.php?page=index">Eva Denys</a></h1>
+        <h1><a class="site-header__titel" href="index.php?page=index">Eva Denys</a></h1>
         <p><a href="index.php?page=index" class="site-header__titelAfkort">E.D.</a></p>
         <nav>
           <ul class="site-header__menu">
