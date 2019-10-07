@@ -8,28 +8,26 @@
     </div>
     <div class="project__detail__mini00">
       <div class="project__detail__mini01">
-        <div class="project__detail__mini">
-            <div>
-              <h3>client</h3>
-              <?php echo $project["client"] ?>
-            </div>
-            <div>
-              <h3>team</h3>
-              <?php echo $project["team"] ?>
-            </div>
-            <div>
-              <h3>role</h3>
-              <?php echo $project["role"] ?>
-            </div>
-            <div>
-              <h3>date</h3>
-              <?php echo $project["date"] ?>
-            </div>
-        </div>
-        <div>
-          <h3>all to know ...</h3>
-          <?php echo $project["bio"] ?>
-        </div>
+          <div class="client">
+            <h3>client</h3>
+            <?php echo $project["client"] ?>
+          </div>
+          <div class="team">
+            <h3>team</h3>
+            <?php echo $project["team"] ?>
+          </div>
+          <div class="role">
+            <h3>role</h3>
+            <?php echo $project["role"] ?>
+          </div>
+          <div class="date">
+            <h3>date</h3>
+            <?php echo $project["date"] ?>
+          </div>
+          <div class="bio">
+            <h3>all to know ...</h3>
+            <?php echo $project["bio"] ?>
+          </div>
       </div>
     </div>
     <div class="detail__button">

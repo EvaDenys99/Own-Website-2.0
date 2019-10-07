@@ -16,15 +16,15 @@
         </div>
 
         <div class="skills">
-          <div>
+          <div class="skillsItem">
             <h3>Development</h3>
-            <p class="skillset">HTML <span>.</span> CSS <span>.</span> JavaScript <span>.</span> React <span>.</span> Arduino <span>.</span> Dwengo <span>.</span> PLC <span>.</span> PHP <span>.</span> SQL <span>.</span> Swift</p>
+            <p class="skillset">HTML <span>.</span> CSS <span>.</span> JavaScript <span>.</span> ReactJS <span>.</span> Arduino <span>.</span> Dwengo <span>.</span> PLC <span>.</span> PHP <span>.</span> SQL <span>.</span> Swift</p>
           </div>
-          <div>
+          <div class="skillsItem">
             <h3>Design</h3>
             <p class="skillset">Photoshop <span>.</span> Illustrator <span>.</span> Sketch <span>.</span> After effects</p>
           </div>
-          <div>
+          <div class="skillsItem">
             <h3>Research</h3>
             <p class="skillset">UX <span>.</span> Persona's <span>.</span> Adobe XD</p>
           </div>

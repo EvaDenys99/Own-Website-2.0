@@ -14,7 +14,7 @@
     <header class="site-header">
       <div class="site-header_menubalk">
         <h1><a class="site-header__titel" href="index.php?page=index">Eva Denys</a></h1>
-        <p><a href="index.php?page=index" class="site-header__titelAfkort">E.D.</a></p>
+        <p><a href="index.php?page=index" class="site-header__titelAfkort">Eva D.</a></p>
         <nav>
           <ul class="site-header__menu">
             <li class="site-header__items<?php if($currentPage == 'home') echo '-actief';?>"><a href="index.php?page=index">Production build</a></li>

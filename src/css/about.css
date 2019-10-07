@@ -1,0 +1,150 @@
+/* about */
+
+.me,
+.project,
+.project__detail__img,
+.project__detail__foto {
+  border: 1px solid;
+  border-image-source: linear-gradient(var(--rose), transparent);
+  border-image-slice: 1;
+}
+
+.title_page2 {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+
+  &::before {
+    border-top: 2px solid var(--rose);
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.me {
+  background-image: url('../assets/img/meFull.png');
+  background-repeat: no-repeat;
+  width: 46rem;
+  height: 61.2rem;
+}
+
+.title_page2_img {
+  display: none;
+}
+
+.boven {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about {
+  padding: 1rem;
+}
+
+.info {
+  line-height: 2.5rem;
+}
+
+.info_3words {
+  margin-bottom: 4.9rem;
+}
+
+.info_mini {
+  margin-bottom: 3.7rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 4rem;
+}
+
+.skillsItem {
+  margin-bottom: 3rem;
+}
+
+.skillset {
+  line-height: 2rem;
+}
+
+.socialMedia {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.socialMedia_item {
+  padding: 1rem;
+}
+
+@media (--m) {
+}
+
+@media (--l) {
+}
+
+@media (--xl) {
+
+  .about {
+    margin-left: 7rem;
+    position: absolute;
+    margin-top: -2rem;
+  }
+
+  .boven {
+    flex-direction: row-reverse;
+  }
+
+  .me {
+    background-image: url('../assets/img/me.png');
+    background-repeat: no-repeat;
+    width: 46rem;
+    height: 61.2rem;
+    margin-top: 6.6rem;
+  }
+
+  .me:hover {
+    background-image: url('../assets/img/meFull.png');
+  }
+
+  .title_page2 {
+    position: absolute;
+    margin-left: 7rem;
+    margin-top: 5.6rem;
+
+    z-index: -1;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .title_page2_img {
+    display: block;
+    z-index: -1;
+  }
+
+  .heardbeat2.0 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 71.3rem;
+    line-height: 2.5rem;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 71.3rem;
+  }
+}
