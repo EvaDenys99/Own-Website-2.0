@@ -177,27 +177,15 @@ span {
   display: none;
 }
 
+.title_page1_img01 {
+  display: none;
+}
+
 @media (--m) {
   /* 768 px */
-}
-
-@media (--l) {
-  /* 1024 px */
-}
-
-@media (--xl) {
-
-  .site-header_menubalk {
-    width: 80%;
-  }
 
   h1 {
     display: block;
-  }
-
-  .site-header__items,
-  .site-header__items-actief {
-    margin-left: 6.5rem;
   }
 
   .site-header__titelAfkort {
@@ -205,7 +193,7 @@ span {
   }
 
   .title_page1 {
-    position: absolute;
+    position: relative;
     margin-top: 7.4rem;
 
     &::before {
@@ -213,9 +201,40 @@ span {
     }
   }
 
+  .title_page1_img01 {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    margin-top: -6.7rem;
+  }
+}
+
+@media (--l) {
+  /* 1024 px */
+
+  .site-header_menubalk {
+    width: 80%;
+  }
+
+  .site-header__items,
+  .site-header__items-actief {
+    margin-left: 6.5rem;
+  }
+}
+
+@media (--xl) {
+
+  .title_page1 {
+    position: absolute;
+  }
+
   .title_page1_img {
     display: block;
     z-index: -1;
+  }
+
+  .title_page1_img01 {
+    display: none;
   }
 
   .heardbeat {
