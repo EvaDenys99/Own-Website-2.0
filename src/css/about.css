@@ -86,21 +86,31 @@
 }
 
 @media (--m) {
+
+  .about__me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title_page2 {
+    justify-self: center;
+  }
 }
 
 @media (--l) {
-}
 
-@media (--xl) {
+  main {
+    overflow: hidden;
+  }
 
   .about {
     margin-left: 7rem;
-    position: absolute;
     margin-top: -2rem;
   }
 
   .boven {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .me {
@@ -109,6 +119,7 @@
     width: 46rem;
     height: 61.2rem;
     margin-top: 6.6rem;
+    margin-left: -30rem;
   }
 
   .me:hover {
@@ -146,5 +157,22 @@
     flex-direction: row;
     justify-content: space-between;
     width: 71.3rem;
+  }
+
+  .skillsItem {
+    width: 14rem;
+  }
+}
+
+@media (--xl) {
+
+  .about {
+    margin-left: 7rem;
+    position: absolute;
+    margin-top: -2rem;
+  }
+
+  .boven {
+    flex-direction: row-reverse;
   }
 }

@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="about__me">
       <div class="me"></div>
       <div class="socialMedia">
         <a target="_blank" href="https://www.facebook.com/eva.denys.9"><img class="socialMedia_item" src="assets/img/fb.png" alt=""></a>

@@ -3,7 +3,7 @@
     <h2 class="title_page1">Production build</h2>
     <img class="title_page1_img" src="././assets/img/heartbeat.png" alt="">
     <img class="title_page1_img01" src="././assets/img/heartbeat-s.png" alt="">
-    <img class="title_page1_img02" src="././assets/img/heartbeat-m.png" alt="">
+    <!-- <img class="title_page1_img02" src="././assets/img/heartbeat-m.png" alt=""> -->
   </div>
   <section class="projects">
     <?php if (empty($projects)): ?>
