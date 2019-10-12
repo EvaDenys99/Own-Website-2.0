@@ -1,6 +1,24 @@
 <section>
   <div class="project__detail">
-    <img class="project__detail__img" src="././assets/img/projecten/<?php echo $project["name"] ?>/<?php echo $project["mainPic"]?>.png" alt="">
+    <!-- <img class="project__detail__img" src="././assets/img/projecten/<?php echo $project["name"] ?>/<?php echo $project["mainPic"]?>.png" alt=""> -->
+    <picture class="project__detail__img">
+      <source
+        srcset="
+          ././assets/img/projecten/<?php echo $project["name"] ?>/<?php echo $project["mainPic"]?>-s.png   307w,
+          ././assets/img/projecten/<?php echo $project["name"] ?>/<?php echo $project["mainPic"]?>-m.png   495w,
+          ././assets/img/projecten/<?php echo $project["name"] ?>/<?php echo $project["mainPic"]?>-l.png  528w
+          "
+        sizes=" (min-width: 1440px) 30vw,
+          (min-width: 1024px) 50vw,
+          (min-width: 624px) 50vw,
+          (min-width: 0) 99vw"
+          type="image/jpeg"
+        />
+        <img
+          src="././assets/img/projecten/<?php echo $project["name"] ?>/<?php echo $project["mainPic"]?>.png"
+           alt="Een foto van het project."
+        />
+    </picture>
     <div class="project__detail__title">
       <img class="project__detail__img__hart" src="././assets/img/heartbeat_about.png" alt="">
       <h2 class="project__detail__title__name"><?php echo $project["name"] ?></h2>
@@ -38,12 +56,14 @@
   </div>
 
   <div class="project__detail__fotos__videos">
-      <?php $iets =explode(", ", $project["img"]) ?>
-      <?php foreach($iets as $iet): ?>
-        <div class="project__detail__foto">
-          <img width="202" height="202" src="././assets/img/projecten/<?php echo $project["name"]?>/<?php echo $iet?>.png" alt="">
-        </div>
-      <?php endforeach; ?>
+      <?php if(!empty ($project["img"])): ?>
+        <?php $iets =explode(", ", $project["img"]) ?>
+        <?php foreach($iets as $iet): ?>
+          <div class="project__detail__foto">
+            <img width="202" height="202" src="././assets/img/projecten/<?php echo $project["name"]?>/<?php echo $iet?>.png" alt="">
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
       <?php if(!empty ($project["video"])): ?>
         <div>
           <a  href="<?php echo $project['link'];?>">Go look!</a>
@@ -51,7 +71,7 @@
       <?php endif; ?>
   </div>
 
-  <a class="footerDetail" href="index.php?page=index">
+  <a class="footerDetail<?php if(empty ($project['img'])) echo '-none';?>" href="index.php?page=index">
     X Close Project
   </a>
 </section>

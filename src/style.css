@@ -177,7 +177,8 @@ span {
   display: none;
 }
 
-.title_page1_img01 {
+.title_page1_img01,
+.title_page1_img02 {
   display: none;
 }
 
@@ -220,6 +221,17 @@ span {
   .site-header__items-actief {
     margin-left: 6.5rem;
   }
+
+  .title_page1_img02 {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    margin-top: -6.7rem;
+  }
+
+  .title_page1_img01 {
+    display: none;
+  }
 }
 
 @media (--xl) {
@@ -233,7 +245,8 @@ span {
     z-index: -1;
   }
 
-  .title_page1_img01 {
+  .title_page1_img01,
+  .title_page1_img02 {
     display: none;
   }
 

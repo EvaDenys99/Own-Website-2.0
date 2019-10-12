@@ -18,7 +18,7 @@
         <div class="skills">
           <div class="skillsItem">
             <h3>Development</h3>
-            <p class="skillset">HTML <span>.</span> CSS <span>.</span> JavaScript <span>.</span> ReactJS <span>.</span> Arduino <span>.</span> Dwengo <span>.</span> PLC <span>.</span> PHP <span>.</span> SQL <span>.</span> Swift</p>
+            <p class="skillset">HTML <span>.</span> CSS <span>.</span> JavaScript <span>.</span> ReactJS <span>.</span> Arduino <span>.</span> Dwengo <span>.</span> PLC <span>.</span> PHP <span>.</span> SQL <span>.</span> Swift <span>.</span> Socket.io</p>
           </div>
           <div class="skillsItem">
             <h3>Design</h3>
@@ -35,9 +35,9 @@
     <div class="about__me">
       <div class="me"></div>
       <div class="socialMedia">
-        <a target="_blank" href="https://www.facebook.com/eva.denys.9"><img class="socialMedia_item" src="assets/img/fb.png" alt=""></a>
-        <a target="_blank" href="https://www.behance.net/_eva_denys_/"><img class="socialMedia_item" src="assets/img/be.png" alt=""></a>
-        <a target="_blank" href="https://github.com/EvaDenys99"><img class="socialMedia_item" src="assets/img/git.png" alt=""></a>
+        <a target="_blank" href="https://www.facebook.com/eva.denys.9"><img class="socialMedia_item socialMedia_item_img" src="assets/img/fb.png" alt=""><p class="socialMedia_item socialMedia_item_tekst">facebook</p></a>
+        <a target="_blank" href="https://www.behance.net/_eva_denys_/"><img class="socialMedia_item socialMedia_item_img" src="assets/img/be.png" alt=""><p class="socialMedia_item socialMedia_item_tekst">behance</p></a>
+        <a target="_blank" href="https://github.com/EvaDenys99"><img class="socialMedia_item socialMedia_item_img" src="assets/img/git.png" alt=""><p class="socialMedia_item socialMedia_item_tekst">github</p></a>
       </div>
     </div>
   </div>
